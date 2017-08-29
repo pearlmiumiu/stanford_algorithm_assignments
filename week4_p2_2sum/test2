@@ -1,0 +1,36 @@
+def getsum(a, b, c, d):
+	sum=0
+	low=max(a,c)
+	high=min(b,d)
+	for i in range(low,high+1):
+		sum+=i
+	return sum
+
+def printnum(n, factors):
+	
+	
+	for i in range(n+1):
+		divisible_one=False
+		divisible_all=True
+		for j in factors:
+			if i%j != 0:
+				divisible_all == False
+
+			else:
+			    divisible_one==True
+		
+		if divisible_all == True:
+			print "i"+"all"
+		elif divisible_one ==True:
+			print "i"+"one"
+		else:
+			print "i"
+def main():
+	printnum(7, [2,3])
+
+if __name__ == '__main__':
+	main()
+
+
+
+
